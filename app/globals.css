@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-bg: #f6f1e8;
+  --color-card: #fffdf8;
+  --color-ink: #2c241e;
+  --color-muted: #6e6258;
+  --color-terra: #8f3d2a;
+  --color-bronze: #8a5a2a;
+  --color-stone: #e8dfd2;
+  --color-line: #e0d4c4;
+  --color-sea: #d5e2dc;
+  --font-sans: var(--font-noto-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-noto-serif), ui-serif, Georgia, serif;
+}
+
+html {
+  background: #f6f1e8;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f6f1e8;
+  color: #2c241e;
+}
+
+a {
+  text-underline-offset: 3px;
+}
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+  outline: 2px solid #8a5a2a;
+  outline-offset: 3px;
+}
+
+[id] {
+  scroll-margin-top: 5.5rem;
+}
+
+.meander {
+  height: 10px;
+  background-image: repeating-linear-gradient(
+    90deg,
+    transparent 0 6px,
+    rgba(143, 61, 42, 0.45) 6px 8px,
+    transparent 8px 14px
+  );
+  border-top: 2px solid rgba(143, 61, 42, 0.45);
+  border-bottom: 2px solid rgba(143, 61, 42, 0.45);
+}
+
+.prose-rome p {
+  line-height: 1.9;
+  margin-top: 0.9em;
+}
+
+.prose-rome p:first-child {
+  margin-top: 0;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
