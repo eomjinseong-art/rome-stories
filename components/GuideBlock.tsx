@@ -25,7 +25,7 @@ export function GuideBlock({
   children?: ReactNode;
 }) {
   return (
-    <section id={id} className="scroll-mt-28 rounded-lg border border-line bg-card p-5 sm:p-6">
+    <section id={id} className="scroll-mt-40 rounded-lg border border-line bg-card p-5 sm:p-6">
       <div className="flex flex-wrap items-center gap-2">
         <p className="text-[11px] font-medium tracking-[0.16em] text-terra">{en}</p>
         {kind ? <KindBadge kind={kind} /> : null}

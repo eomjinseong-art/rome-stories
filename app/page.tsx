@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { JsonLd } from "@/components/JsonLd";
+import { SisterSites } from "@/components/SisterSites";
 import { eras } from "@/data/eras";
 import { emperors, kings } from "@/data/rulers";
 import { wars } from "@/data/wars";
@@ -95,15 +96,7 @@ export default function Home() {
             ))}
           </ol>
         </div>
-        <div className="rounded-lg border border-line bg-card p-5">
-          <h2 className="font-serif text-2xl text-ink">{MYTH_NAME}</h2>
-          <p className="mt-2 text-sm leading-7 text-muted">
-            신들의 이야기, 그리스 이름과 로마 이름의 차이, 아이네이아스의 서사시는 자매 사이트에 있습니다. 로마이야기는 그 신화가 붙은 나라의 정치와 전쟁, 하루를 다룹니다.
-          </p>
-          <a href={`${MYTH_URL}/greece-vs-rome`} className="mt-3 inline-block text-sm text-terra" rel="noopener noreferrer">
-            그리스 vs 로마 보기 →
-          </a>
-        </div>
+        <SisterSites variant="home" />
       </section>
     </div>
   );

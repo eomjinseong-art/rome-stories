@@ -40,7 +40,7 @@ export default function MythLinksPage() {
         <p className="mt-1 text-sm text-muted">로마 이름 · 라틴어 · 그리스 이름. 비교 글은 {MYTH_NAME}로 이어집니다.</p>
         <ul className="mt-4 grid gap-3 sm:grid-cols-2">
           {pairs.map((pair) => (
-            <li key={pair.slug} id={pair.slug} className="scroll-mt-28 rounded-lg border border-line bg-card p-4">
+            <li key={pair.slug} id={pair.slug} className="scroll-mt-40 rounded-lg border border-line bg-card p-4">
               <p className="text-[11px] tracking-[0.16em] text-terra">{pair.en}</p>
               <h3 className="mt-1 font-serif text-xl text-ink">
                 {pair.roman}
@@ -68,7 +68,7 @@ export default function MythLinksPage() {
         <h2 className="font-serif text-2xl text-ink">로마 쪽에서 더 또렷한 이름</h2>
         <ul className="mt-4 grid gap-3 sm:grid-cols-2">
           {romanOnly.map((god) => (
-            <li key={god.slug} id={god.slug} className="scroll-mt-28 rounded-lg border border-line bg-card p-4">
+            <li key={god.slug} id={god.slug} className="scroll-mt-40 rounded-lg border border-line bg-card p-4">
               <p className="text-[11px] tracking-[0.16em] text-terra">{god.en}</p>
               <h3 className="mt-1 font-serif text-xl text-ink">
                 {god.roman}

@@ -4,7 +4,7 @@ import type { Movie, MovieTopic } from "@/data/types";
 
 export function MovieCard({ movie }: { movie: Movie }) {
   return (
-    <li id={movie.slug} className="scroll-mt-28 rounded-lg border border-line bg-card p-4">
+    <li id={movie.slug} className="scroll-mt-40 rounded-lg border border-line bg-card p-4">
       <p className="font-serif text-lg text-ink">
         「{movie.titleKo}」
         <span className="ml-2 font-sans text-sm font-normal text-muted">

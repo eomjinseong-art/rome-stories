@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { CoupangBanner } from "@/components/CoupangBanner";
-import { BRAND_LINE, MYTH_NAME, MYTH_URL, NAV, SITE_NAME } from "@/lib/site";
+import { SisterSites } from "@/components/SisterSites";
+import { BRAND_LINE, NAV, SITE_NAME } from "@/lib/site";
 
 export function Footer() {
   return (
@@ -24,10 +25,8 @@ export function Footer() {
               {item.label}
             </Link>
           ))}
-          <a href={MYTH_URL} className="underline decoration-line underline-offset-4 hover:text-terra" rel="noopener noreferrer">
-            {MYTH_NAME}
-          </a>
         </nav>
+        <SisterSites variant="footer" />
       </div>
     </footer>
   );

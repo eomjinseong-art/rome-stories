@@ -31,7 +31,7 @@ export default function MapPage() {
       />
       <div className="mt-8 space-y-12">
         {regions.map((region) => (
-          <section key={region.id} id={region.id} className="scroll-mt-28">
+          <section key={region.id} id={region.id} className="scroll-mt-40">
             <p className="text-[11px] tracking-[0.16em] text-terra">{region.en}</p>
             <h2 className="mt-1 font-serif text-2xl text-ink">{region.title}</h2>
             <p className="mt-2 max-w-3xl text-sm leading-7 text-muted">{region.lead}</p>
