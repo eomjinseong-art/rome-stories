@@ -7,8 +7,16 @@ export const BRAND_LINE = "나두 — 나의 모든 일상을 AI와 함께";
 
 export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://rome-stories.vercel.app";
 
-export const MYTH_URL = "https://nadoo-myth.vercel.app";
-export const MYTH_NAME = "나두신화";
+export const SISTER_SITES_LABEL = "나두 역사·신화";
+
+export const SISTER_SITES = [
+  { href: "https://nadoo-myth.vercel.app", label: "나두신화", en: "Myth" },
+  { href: "https://greece-stories.vercel.app", label: "그리스이야기", en: "Greece Stories" },
+  { href: "https://egypt-stories.vercel.app", label: "이집트이야기", en: "Egypt Stories" },
+] as const;
+
+export const MYTH_URL = SISTER_SITES[0].href;
+export const MYTH_NAME = SISTER_SITES[0].label;
 
 export const COUPANG_URL = "https://link.coupang.com/a/hsdzLh1vB6";
 

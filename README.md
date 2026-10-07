@@ -4,7 +4,7 @@
 
 나두 — 나의 모든 일상을 AI와 함께
 
-자매 사이트 [나두신화](https://nadoo-myth.vercel.app)는 그리스·로마 신화를 다룹니다. 로마이야기는 그 신화가 붙은 나라의 정치, 전쟁, 하루를 다룹니다.
+나두 역사·신화로 이어지는 자매 사이트는 [나두신화](https://nadoo-myth.vercel.app), [그리스이야기](https://greece-stories.vercel.app), [이집트이야기](https://egypt-stories.vercel.app)입니다. 로마이야기는 로마의 정치, 전쟁, 하루를 다룹니다.
 
 ## 메뉴
 
