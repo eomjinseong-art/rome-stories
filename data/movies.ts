@@ -13,6 +13,7 @@ export const movies: readonly Movie[] = [
     links: [
       { href: "/rulers/marcus-aurelius", label: "마르쿠스 아우렐리우스" },
       { href: "/army", label: "군인" },
+      { href: "https://philosophy-stories.vercel.app/films#films-marcus-aurelius", label: "철학이야기에서 마르쿠스 아우렐리우스 영화 보기" },
     ],
   },
   {
@@ -36,7 +37,7 @@ export const movies: readonly Movie[] = [
     fiction: "스파르타쿠스가 트라키아 출신 검투사였다는 큰 줄기는 플루타르코스와 아피아누스에 나옵니다. 다만 그의 정치 강령, 개인적 인연, 최후의 말은 영화가 채운 부분입니다. 시신은 확인되지 않았고, 포로들이 길가에서 처형되었다는 기록과 영화의 결말을 똑같이 보면 안 됩니다.",
     topics: ["wars", "army"],
     links: [
-      { href: "/wars", label: "전쟁" },
+      { href: "/wars#spartacus", label: "스파르타쿠스 반란" },
       { href: "/army", label: "군인" },
     ],
   },
@@ -53,6 +54,7 @@ export const movies: readonly Movie[] = [
       { href: "/cleopatra", label: "클레오파트라와 로마" },
       { href: "/wars/actium", label: "악티움" },
       { href: "/rulers/augustus", label: "아우구스투스" },
+      { href: "https://egypt-stories.vercel.app/movies#cleopatra-1963", label: "이집트이야기에서 클레오파트라 영화 보기" },
     ],
   },
   {
@@ -67,6 +69,7 @@ export const movies: readonly Movie[] = [
     links: [
       { href: "/daily", label: "일상" },
       { href: "/rulers/tiberius", label: "티베리우스" },
+      { href: "https://the-chosen-korean.vercel.app/characters/pilate", label: "더 초즌에서 빌라도 보기" },
     ],
   },
   {
@@ -126,7 +129,7 @@ export const movies: readonly Movie[] = [
     topics: ["rulers"],
     links: [
       { href: "/rulers/marcus-aurelius", label: "마르쿠스 아우렐리우스" },
-      { href: "/origins", label: "시대 구분" },
+      { href: "/origins#empire", label: "제정 시대" },
     ],
   },
   {
@@ -138,7 +141,10 @@ export const movies: readonly Movie[] = [
     why: "서기 79년 베수비오 화산이 폼페이를 덮은 사건 자체를 떠올리게 합니다. 도시 생활의 배경을 크게 보고 싶을 때 거론됩니다.",
     fiction: "화산 폭발은 사실입니다. 소 플리니우스가 목격담을 편지에 남겼습니다. 폭발이 8월인지 가을인지는 최근 연구가 다시 따집니다. 검투사와 영주의 딸이 사랑에 빠진다는 줄거리는 창작이고, 폼페이는 수도 로마가 아니라 캄파니아의 도시입니다.",
     topics: ["daily"],
-    links: [{ href: "/daily", label: "일상" }],
+    links: [
+      { href: "/map#campania", label: "폼페이와 캄파니아" },
+      { href: "/daily", label: "일상" },
+    ],
   },
   {
     slug: "last-legion",
@@ -149,7 +155,7 @@ export const movies: readonly Movie[] = [
     why: "서로마의 마지막 황제 로물루스 아우구스툴루스라는 이름을 영화에서 들어 봤다면, 그 인상이 어디서 왔는지 확인할 때 씁니다.",
     fiction: "역사와 거리가 멉니다. 476년 폐위된 소년 황제를 브리튼과 아서 왕 전설에 연결한 모험물입니다. 마지막 군단이 칼을 들고 영국으로 가 새 나라를 세웠다는 줄거리는 사료가 아닙니다. 서로마의 끝은 이 사이트의 시대 글을 기준으로 보세요.",
     topics: ["origins", "rulers"],
-    links: [{ href: "/origins", label: "로마의 탄생·시대" }],
+    links: [{ href: "/origins#empire", label: "제정의 끝" }],
   },
 ];
 

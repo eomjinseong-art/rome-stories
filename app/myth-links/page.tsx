@@ -50,11 +50,11 @@ export default function MythLinksPage() {
               <p className="mt-2 text-sm leading-6">{pair.summary}</p>
               <p className="mt-2 text-sm leading-6 text-muted">{pair.note}</p>
               <p className="mt-3 flex flex-wrap gap-x-3 gap-y-1 text-sm">
-                <a href={pair.compare} className="text-laurel underline decoration-line underline-offset-4 hover:text-terra" rel="noopener noreferrer">
+                <a href={pair.compare} className="text-laurel underline decoration-line underline-offset-4 hover:text-terra" target="_blank" rel="noopener noreferrer">
                   {MYTH_NAME} 비교
                 </a>
                 {pair.greekGod ? (
-                  <a href={pair.greekGod} className="text-laurel underline decoration-line underline-offset-4 hover:text-terra" rel="noopener noreferrer">
+                  <a href={pair.greekGod} className="text-laurel underline decoration-line underline-offset-4 hover:text-terra" target="_blank" rel="noopener noreferrer">
                     {pair.greek} 이야기
                   </a>
                 ) : null}
@@ -75,7 +75,7 @@ export default function MythLinksPage() {
                 <span className="ml-2 font-sans text-sm font-normal text-muted">{god.romanLatin}</span>
               </h3>
               <p className="mt-2 text-sm leading-6">{god.summary}</p>
-              <a href={god.href} className="mt-3 inline-block text-sm text-laurel underline decoration-line underline-offset-4 hover:text-terra" rel="noopener noreferrer">
+              <a href={god.href} className="mt-3 inline-block text-sm text-laurel underline decoration-line underline-offset-4 hover:text-terra" target="_blank" rel="noopener noreferrer">
                 {MYTH_NAME}에서 더 보기
               </a>
             </li>
@@ -90,12 +90,12 @@ export default function MythLinksPage() {
               {link.label}
             </Link>
           ) : (
-            <a key={link.href} href={link.href} className="rounded-full border border-line bg-card px-3 py-1.5 hover:border-terra" rel="noopener noreferrer">
+            <a key={link.href} href={link.href} className="rounded-full border border-line bg-card px-3 py-1.5 hover:border-terra" target="_blank" rel="noopener noreferrer">
               {link.label}
             </a>
           ),
         )}
-        <a href={MYTH_URL} className="rounded-full border border-line bg-card px-3 py-1.5 hover:border-terra" rel="noopener noreferrer">
+        <a href={MYTH_URL} className="rounded-full border border-line bg-card px-3 py-1.5 hover:border-terra" target="_blank" rel="noopener noreferrer">
           {MYTH_NAME} 홈
         </a>
       </nav>

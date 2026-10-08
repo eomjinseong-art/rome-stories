@@ -27,7 +27,8 @@ export const wars: readonly War[] = [
     movieSlugs: [],
     related: [
       { href: "/wars/first-punic-war", label: "다음 큰 전쟁, 포에니" },
-      { href: "/map", label: "남이탈리아" },
+      { href: "/map#sicily", label: "남이탈리아" },
+      { href: "https://greece-stories.vercel.app/origins#hellenistic", label: "그리스이야기에서 헬레니즘 시대 보기" },
     ],
   },
   {
@@ -53,7 +54,8 @@ export const wars: readonly War[] = [
     movieSlugs: [],
     related: [
       { href: "/wars/second-punic-war", label: "제2차 포에니 전쟁" },
-      { href: "/map", label: "시칠리아와 카르타고" },
+      { href: "/map#sicily", label: "시칠리아" },
+      { href: "/map#carthage", label: "카르타고" },
     ],
   },
   {
@@ -112,7 +114,9 @@ export const wars: readonly War[] = [
     movieSlugs: [],
     related: [
       { href: "/myth-links", label: "이때 들어온 그리스 신화" },
-      { href: "/map", label: "그리스와 마케도니아" },
+      { href: "/map#greece", label: "그리스와 마케도니아" },
+      { href: "https://greece-stories.vercel.app/polis/corinth", label: "그리스이야기에서 코린토스 보기" },
+      { href: "https://greece-stories.vercel.app/family-tree?tree=successors", label: "그리스이야기 가족관계도에서 후계 왕조 보기" },
     ],
   },
   {
@@ -142,7 +146,7 @@ export const wars: readonly War[] = [
     movieSlugs: [],
     related: [
       { href: "/wars/macedonian-wars", label: "같은 해의 코린토스" },
-      { href: "/map", label: "카르타고" },
+      { href: "/map#carthage", label: "카르타고" },
     ],
   },
   {
@@ -171,7 +175,7 @@ export const wars: readonly War[] = [
     movieSlugs: ["rome-hbo"],
     related: [
       { href: "/wars/caesar-civil-war", label: "카이사르의 내전" },
-      { href: "/map", label: "갈리아" },
+      { href: "/map#gaul", label: "갈리아" },
       { href: "/army", label: "군단" },
     ],
   },
@@ -205,6 +209,7 @@ export const wars: readonly War[] = [
       { href: "/cleopatra", label: "클레오파트라" },
       { href: "/wars/actium", label: "다음 내전, 악티움" },
       { href: "/rulers/augustus", label: "아우구스투스" },
+      { href: "https://persia-stories.vercel.app/wars/carrhae", label: "페르시아이야기에서 카르하이 전투 보기" },
     ],
   },
   {
@@ -235,6 +240,8 @@ export const wars: readonly War[] = [
     related: [
       { href: "/cleopatra", label: "클레오파트라와 로마" },
       { href: "/rulers/augustus", label: "아우구스투스" },
+      { href: "https://egypt-stories.vercel.app/rulers/cleopatra-vii", label: "이집트이야기에서 클레오파트라 7세 보기" },
+      { href: "https://egypt-stories.vercel.app/family-tree?tab=ptolemy&focus=cleopatra-vii", label: "이집트이야기 가족관계도에서 클레오파트라 보기" },
     ],
   },
 ];

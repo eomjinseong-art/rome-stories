@@ -11,9 +11,9 @@
  * 인물을 더할 때는 같은 가로줄의 col 간격을 1.2 이상으로 두고, 세대 간격은 210 전후로 둡니다.
  */
 
-import type { Source } from "@/data/types";
+import type { LinkItem, Source } from "@/data/types";
 import { rulerBySlug } from "@/data/rulers";
-import { MYTH_URL } from "@/lib/site";
+import { ALLOWED_SISTER_ORIGINS, MYTH_URL } from "@/lib/site";
 
 export type LinkKind = "parent" | "adoption" | "spouse" | "variant-parent";
 
@@ -34,6 +34,8 @@ export type TreeSeed = {
   guestTag?: string;
   href?: string;
   hrefLabel?: string;
+  /** Extra pages on sister sites. Rendered as “다른 사이트에서 더 보기”. */
+  also?: readonly LinkItem[];
   summary: string;
   note?: string;
   /** Shown when this chart draws no biological parent. */
@@ -232,7 +234,7 @@ const DEFS: TreeDef[] = [
     ],
     seeds: [
       { id: "creusa", ko: "크레우사", en: "Creusa", latin: "Creusa", band: "latium", col: 0, y: 70, guestTag: "배우자", summary: "트로이의 공주이고 아이네이아스의 첫 아내로 전합니다. 아스카니우스의 어머니인지는 이야기가 갈립니다.", aliases: ["creusa", "크레우사"] },
-      { id: "aeneas", ko: "아이네이아스", en: "Aeneas", latin: "Aeneas", band: "latium", col: 1.2, y: 70, href: `${MYTH_TREE}?focus=aineias`, hrefLabel: "신화", summary: "트로이 영웅입니다. 로마 기원 신화는 그가 이탈리아에 와서 라비니아와 결혼했다고 이어 갑니다.", parentNote: "부모 안키세스와 베누스(아프로디테)는 이 그림 밖에 있습니다. 나두신화 가족관계도에서 이어 보면 됩니다.", aliases: ["aeneas", "아이네이아스", "아이네아스", "에네아스"] },
+      { id: "aeneas", ko: "아이네이아스", en: "Aeneas", latin: "Aeneas", band: "latium", col: 1.2, y: 70, href: `${MYTH_TREE}?focus=aineias`, hrefLabel: "신화", also: [{ href: `${MYTH_URL}/gods/aineias`, label: "나두신화에서 아이네이아스 보기" }, { href: "https://iliad-stories.vercel.app", label: "일리아스 속 아이네이아스" }], summary: "트로이 영웅입니다. 로마 기원 신화는 그가 이탈리아에 와서 라비니아와 결혼했다고 이어 갑니다.", parentNote: "부모 안키세스와 베누스(아프로디테)는 이 그림 밖에 있습니다. 나두신화 가족관계도에서 이어 보면 됩니다.", aliases: ["aeneas", "아이네이아스", "아이네아스", "에네아스"] },
       { id: "lavinia", ko: "라비니아", en: "Lavinia", latin: "Lavinia", band: "latium", col: 2.4, y: 70, guestTag: "배우자", summary: "라티움 왕 라티누스의 딸로 전합니다. 아이네이아스의 이탈리아 쪽 아내이고, 도시 라비니움의 이름과 연결됩니다.", aliases: ["lavinia", "라비니아"] },
 
       { id: "ascanius", ko: "아스카니우스", en: "Ascanius", latin: "Ascanius / Iulus", band: "alba", col: 1.2, y: 280, badge: true, summary: "아이네이아스의 아들로 알바 롱가를 세웠다고 전합니다. 율리우스 가문은 이울루스라는 이름을 자기 조상으로 내세웠습니다.", note: "리비우스는 이 사람과, 크레우사에게서 난 손위의 이울루스가 같은 사람인지 정하지 않습니다. 어머니도 크레우사인지 라비니아인지 열어 둡니다.", aliases: ["ascanius", "iulus", "iulius", "아스카니우스", "이울루스", "율루스"] },
@@ -817,8 +819,19 @@ for (const tree of TREES) {
   }
 }
 
+const allowedSisterOrigins = new Set(ALLOWED_SISTER_ORIGINS);
+
 for (const tree of TREES) {
   for (const node of tree.nodes) {
+    for (const link of node.also ?? []) {
+      let origin = "";
+      try {
+        origin = new URL(link.href).origin;
+      } catch {
+        throw new Error(`가족관계도 바깥 링크 주소가 잘못되었습니다: ${link.href}`);
+      }
+      if (!allowedSisterOrigins.has(origin)) throw new Error(`가족관계도 바깥 링크가 자매 사이트가 아닙니다: ${link.href}`);
+    }
     if (!node.href || node.href.startsWith("http")) continue;
     if (node.href.startsWith("/rulers/")) {
       const slug = node.href.slice("/rulers/".length).split(/[?#]/)[0];

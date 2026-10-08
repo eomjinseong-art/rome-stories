@@ -11,13 +11,42 @@ export const SISTER_SITES_LABEL = "나두 역사·신화";
 
 export const SISTER_SITES = [
   { href: "https://nadoo-myth.vercel.app", label: "나두신화", en: "Myth" },
-  { href: "https://greece-stories.vercel.app", label: "그리스이야기", en: "Greece Stories" },
-  { href: "https://egypt-stories.vercel.app", label: "이집트이야기", en: "Egypt Stories" },
+  { href: "https://iliad-stories.vercel.app", label: "일리아스이야기", en: "Iliad" },
+  { href: "https://greece-stories.vercel.app", label: "그리스이야기", en: "Greece" },
+  { href: "https://egypt-stories.vercel.app", label: "이집트이야기", en: "Egypt" },
+  { href: "https://persia-stories.vercel.app", label: "페르시아이야기", en: "Persia" },
+  { href: "https://the-chosen-korean.vercel.app", label: "더 초즌 · 성경", en: "The Chosen · Bible" },
+  { href: "https://philosophy-stories.vercel.app", label: "철학이야기", en: "Philosophy" },
+  { href: "https://korea-stories.vercel.app", label: "대한민국이야기", en: "Korea" },
   { href: "https://nadoo-timeline.vercel.app", label: "나두연표", en: "Timeline" },
+  { href: "https://tinalinkeom.vercel.app", label: "나두 허브", en: "Nadoo Hub" },
 ] as const;
 
-export const MYTH_URL = SISTER_SITES[0].href;
-export const MYTH_NAME = SISTER_SITES[0].label;
+const myth = SISTER_SITES[0];
+export const MYTH_URL = myth.href;
+export const MYTH_NAME = myth.label;
+
+/** Sister origins a build-time link check may name. Do not fetch them: 일리아스이야기는 병행 배포 중이라 404여도 빌드가 실패하면 안 됩니다. */
+export const ALLOWED_SISTER_ORIGINS = SISTER_SITES.map((site) => new URL(site.href).origin);
+
+export const OTHER_FAMILY_TREES = [
+  { href: "https://greece-stories.vercel.app/family-tree", label: "그리스이야기 가족관계도", en: "Greece" },
+  { href: "https://egypt-stories.vercel.app/family-tree", label: "이집트이야기 가족관계도", en: "Egypt" },
+  { href: "https://persia-stories.vercel.app/family-tree", label: "페르시아이야기 가족관계도", en: "Persia" },
+  { href: "https://korea-stories.vercel.app/family-tree", label: "대한민국이야기 가족관계도", en: "Korea" },
+  { href: "https://nadoo-myth.vercel.app/family-tree", label: "나두신화 가족관계도", en: "Myth" },
+  { href: "https://the-chosen-korean.vercel.app/family-tree", label: "더 초즌 · 성경 가족관계도", en: "The Chosen · Bible" },
+] as const;
+
+export const OTHER_FILM_PAGES = [
+  { href: "https://greece-stories.vercel.app/movies", label: "그리스이야기 영화", en: "Greece" },
+  { href: "https://egypt-stories.vercel.app/movies", label: "이집트이야기 영화", en: "Egypt" },
+  { href: "https://persia-stories.vercel.app/movies", label: "페르시아이야기 영화", en: "Persia" },
+  { href: "https://korea-stories.vercel.app/films", label: "대한민국이야기 영화", en: "Korea" },
+  { href: "https://philosophy-stories.vercel.app/films", label: "철학이야기 영화", en: "Philosophy" },
+  { href: "https://nadoo-myth.vercel.app/in-media", label: "나두신화에서 영화 보기", en: "Myth" },
+  { href: "https://the-chosen-korean.vercel.app/together", label: "더 초즌에서 함께 보기", en: "The Chosen · Bible" },
+] as const;
 
 export const COUPANG_URL = "https://link.coupang.com/a/hsdzLh1vB6";
 
