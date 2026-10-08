@@ -224,5 +224,7 @@ export const mythLinks: readonly LinkItem[] = [
   { href: `${MYTH}/greece-vs-rome`, label: "나두신화 · 그리스 vs 로마" },
   { href: `${MYTH}/stories/aeneid`, label: "나두신화 · 아이네이스" },
   { href: "/origins", label: "로마의 탄생·시대" },
+  { href: "/family-tree", label: "가족관계도" },
+  { href: `${MYTH}/family-tree`, label: "나두신화 · 가족관계도" },
   { href: "/cleopatra", label: "클레오파트라와 이집트 정치" },
 ];

@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: { default: `${SITE_NAME} · 쉬운 로마 역사`, template: `%s · ${SITE_NAME}` },
   description,
   applicationName: SITE_NAME,
-  keywords: ["로마 역사", "로마 제국", "아우구스투스", "카이사르", "클레오파트라", "포에니 전쟁", "로마이야기", "Rome Stories"],
+  keywords: ["로마 역사", "로마 제국", "가족관계도", "율리우스 클라우디우스", "아우구스투스", "카이사르", "클레오파트라", "포에니 전쟁", "로마이야기", "Rome Stories"],
   alternates: { canonical: SITE_URL },
   openGraph: {
     type: "website",

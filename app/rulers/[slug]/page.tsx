@@ -10,6 +10,7 @@ import { RelatedLinks } from "@/components/RelatedLinks";
 import { RelatedMovies } from "@/components/RelatedMovies";
 import { Rich } from "@/components/Rich";
 import { SourceList } from "@/components/SourceList";
+import { rulerTreeHref } from "@/data/family-tree";
 import { emperors, kings, rulerBySlug, rulers } from "@/data/rulers";
 import { articleLd, breadcrumbLd, jsonLd, pageMetadata } from "@/lib/seo";
 
@@ -42,6 +43,7 @@ export default async function RulerPage({ params }: { params: Promise<{ slug: st
   const next = list[index + 1];
   const path = `/rulers/${ruler.slug}`;
   const section = ruler.role === "king" ? "왕" : "황제";
+  const treeHref = rulerTreeHref(ruler.slug);
 
   return (
     <article className="mx-auto max-w-3xl px-4 py-8">
@@ -82,7 +84,7 @@ export default async function RulerPage({ params }: { params: Promise<{ slug: st
           </p>
         ))}
       </More>
-      <RelatedLinks links={ruler.related} />
+      <RelatedLinks links={treeHref ? [...ruler.related, { href: treeHref, label: "가족관계도에서 보기" }] : ruler.related} />
       {ruler.movieSlugs.length ? (
         <RelatedMovies slugs={ruler.movieSlugs} />
       ) : (
