@@ -30,7 +30,10 @@ export const rulers: readonly Ruler[] = [
     movieSlugs: [],
     related: [
       { href: "/origins", label: "전설과 역사 비교" },
-      { href: "/myth-links", label: "마르스와 퀴리누스" },
+      { href: "/myth-links#ares-mars", label: "마르스" },
+      { href: "/myth-links#quirinus", label: "퀴리누스" },
+      { href: "https://nadoo-myth.vercel.app/stories/aeneid", label: "나두신화에서 아이네이스 보기" },
+      { href: "https://nadoo-timeline.vercel.app/events/founding-of-rome", label: "나두연표에서 로마 건국 보기" },
     ],
   },
   {
@@ -59,7 +62,10 @@ export const rulers: readonly Ruler[] = [
       { work: "플루타르코스 『영웅전』", ref: "누마" },
     ],
     movieSlugs: [],
-    related: [{ href: "/myth-links", label: "야누스와 베스타" }],
+    related: [
+      { href: "/myth-links#janus", label: "야누스" },
+      { href: "/myth-links#hestia-vesta", label: "베스타" },
+    ],
   },
   {
     slug: "tullus-hostilius",
@@ -83,7 +89,7 @@ export const rulers: readonly Ruler[] = [
     ],
     sources: [{ work: "리비우스 『로마사』", ref: "1권 22–31장" }],
     movieSlugs: [],
-    related: [{ href: "/map", label: "라티움과 알바 롱가" }],
+    related: [{ href: "/map#latium", label: "라티움과 알바 롱가" }],
   },
   {
     slug: "ancus-marcius",
@@ -106,7 +112,7 @@ export const rulers: readonly Ruler[] = [
     ],
     sources: [{ work: "리비우스 『로마사』", ref: "1권 32–33장" }],
     movieSlugs: [],
-    related: [{ href: "/map", label: "로마와 티베르강" }],
+    related: [{ href: "/map#rome", label: "로마와 티베르강" }],
   },
   {
     slug: "tarquinius-priscus",
@@ -134,8 +140,8 @@ export const rulers: readonly Ruler[] = [
     ],
     movieSlugs: [],
     related: [
-      { href: "/map", label: "에트루리아" },
-      { href: "/myth-links", label: "유피테르" },
+      { href: "/map#etruria", label: "에트루리아" },
+      { href: "/myth-links#zeus-jupiter", label: "유피테르" },
     ],
   },
   {
@@ -192,7 +198,7 @@ export const rulers: readonly Ruler[] = [
     ],
     movieSlugs: [],
     related: [
-      { href: "/origins", label: "공화정의 시작" },
+      { href: "/origins#republic", label: "공화정의 시작" },
       { href: "/wars", label: "공화정의 전쟁" },
     ],
   },
@@ -227,6 +233,8 @@ export const rulers: readonly Ruler[] = [
       { href: "/wars/actium", label: "악티움" },
       { href: "/cleopatra", label: "클레오파트라" },
       { href: "/rulers/tiberius", label: "다음 황제 티베리우스" },
+      { href: "https://egypt-stories.vercel.app/cleopatra", label: "이집트이야기에서 클레오파트라 보기" },
+      { href: "https://the-chosen-korean.vercel.app/bible-books/luke", label: "더 초즌에서 누가복음(인구 조사) 보기" },
     ],
   },
   {
@@ -254,7 +262,11 @@ export const rulers: readonly Ruler[] = [
       { work: "수에토니우스 『황제전』", ref: "티베리우스" },
     ],
     movieSlugs: ["i-claudius", "ben-hur"],
-    related: [{ href: "/rulers/augustus", label: "아우구스투스" }],
+    related: [
+      { href: "/rulers/augustus", label: "아우구스투스" },
+      { href: "https://the-chosen-korean.vercel.app/characters/pilate", label: "더 초즌에서 빌라도 보기" },
+      { href: "https://nadoo-timeline.vercel.app/events/crucifixion-of-jesus", label: "나두연표에서 예수의 십자가형 보기" },
+    ],
   },
   {
     slug: "claudius",
@@ -284,8 +296,9 @@ export const rulers: readonly Ruler[] = [
     ],
     movieSlugs: ["i-claudius"],
     related: [
-      { href: "/map", label: "브리타니아" },
+      { href: "/map#britannia", label: "브리타니아" },
       { href: "/rulers/nero", label: "네로" },
+      { href: "https://the-chosen-korean.vercel.app/bible-books/acts", label: "더 초즌에서 사도행전 보기" },
     ],
   },
   {
@@ -317,6 +330,8 @@ export const rulers: readonly Ruler[] = [
     related: [
       { href: "/rulers/vespasian", label: "다음 질서, 베스파시아누스" },
       { href: "/daily", label: "도시와 화재" },
+      { href: "https://philosophy-stories.vercel.app/people/seneca", label: "철학이야기에서 세네카 보기" },
+      { href: "https://nadoo-timeline.vercel.app/events/great-fire-of-rome", label: "나두연표에서 로마 대화재 보기" },
     ],
   },
   {
@@ -346,8 +361,10 @@ export const rulers: readonly Ruler[] = [
     ],
     movieSlugs: [],
     related: [
-      { href: "/daily", label: "폼페이와 도시" },
+      { href: "/map#campania", label: "폼페이와 캄파니아" },
       { href: "/rulers/trajan", label: "트라야누스" },
+      { href: "https://nadoo-timeline.vercel.app/events/second-temple-destroyed", label: "나두연표에서 제2성전 파괴 보기" },
+      { href: "https://nadoo-timeline.vercel.app/events/fall-of-masada", label: "나두연표에서 마사다 함락 보기" },
     ],
   },
   {
@@ -378,8 +395,10 @@ export const rulers: readonly Ruler[] = [
     ],
     movieSlugs: [],
     related: [
-      { href: "/map", label: "다키아와 히스파니아" },
+      { href: "/map#dacia", label: "다키아" },
+      { href: "/map#hispania", label: "히스파니아" },
       { href: "/rulers/hadrian", label: "하드리아누스" },
+      { href: "https://persia-stories.vercel.app/places/ctesiphon", label: "페르시아이야기에서 크테시폰 보기" },
     ],
   },
   {
@@ -410,8 +429,9 @@ export const rulers: readonly Ruler[] = [
     ],
     movieSlugs: [],
     related: [
-      { href: "/map", label: "브리타니아" },
+      { href: "/map#britannia", label: "브리타니아" },
       { href: "/rulers/marcus-aurelius", label: "마르쿠스 아우렐리우스" },
+      { href: "https://nadoo-timeline.vercel.app/events/bar-kokhba", label: "나두연표에서 바르 코크바 보기" },
     ],
   },
   {
@@ -443,7 +463,9 @@ export const rulers: readonly Ruler[] = [
     movieSlugs: ["gladiator", "fall-of-the-roman-empire"],
     related: [
       { href: "/army", label: "군인" },
-      { href: "/movies", label: "글래디에이터 해설" },
+      { href: "/movies#gladiator", label: "글래디에이터 해설" },
+      { href: "https://philosophy-stories.vercel.app/people/marcus-aurelius", label: "철학이야기에서 마르쿠스 아우렐리우스 보기" },
+      { href: "https://philosophy-stories.vercel.app/people/epictetus", label: "철학이야기에서 에픽테토스 보기" },
     ],
   },
   {
@@ -503,8 +525,10 @@ export const rulers: readonly Ruler[] = [
     ],
     movieSlugs: [],
     related: [
-      { href: "/origins", label: "476년과 그 이후" },
+      { href: "/origins#empire", label: "476년과 그 이후" },
       { href: "/movies#last-legion", label: "라스트 리전은 이 시대가 아닙니다" },
+      { href: "https://nadoo-timeline.vercel.app/events/edict-of-milan", label: "나두연표에서 밀라노 칙령 보기" },
+      { href: "https://nadoo-timeline.vercel.app/events/council-of-nicaea", label: "나두연표에서 니케아 공의회 보기" },
     ],
   },
 ];

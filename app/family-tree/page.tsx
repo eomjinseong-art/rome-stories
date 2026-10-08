@@ -1,13 +1,15 @@
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { Elsewhere } from "@/components/Elsewhere";
 import { FamilyTreeView } from "@/components/FamilyTreeView";
+import { SisterStrip } from "@/components/SisterSites";
 import { JsonLd } from "@/components/JsonLd";
 import { PageHead } from "@/components/PageHead";
 import { SourceList } from "@/components/SourceList";
 import { TREES, focusHref, relationsOf } from "@/data/family-tree";
 import type { RelationPerson } from "@/data/family-tree";
 import { breadcrumbLd, itemListLd, jsonLd, pageMetadata } from "@/lib/seo";
-import { MYTH_NAME, MYTH_URL } from "@/lib/site";
+import { MYTH_NAME, MYTH_URL, OTHER_FAMILY_TREES } from "@/lib/site";
 
 const description =
   "로마 가족관계도. 아이네이아스에서 로물루스까지는 전승이고, 율리우스-클라우디우스 왕조는 혈연과 입양을 구분해 그립니다. 플라비우스, 네르바-안토니누스, 콘스탄티누스 가문도 세대로 나눕니다.";
@@ -44,11 +46,12 @@ export default function FamilyTreePage() {
       />
       <p className="mt-3 max-w-3xl text-sm leading-7 text-muted">
         신들의 가계는 이 사이트 밖입니다.{" "}
-        <a href={`${MYTH_URL}/family-tree`} className="text-laurel underline decoration-line underline-offset-4 hover:text-terra" rel="noopener noreferrer">
+        <a href={`${MYTH_URL}/family-tree`} className="text-laurel underline decoration-line underline-offset-4 hover:text-terra" target="_blank" rel="noopener noreferrer">
           {MYTH_NAME} 가족관계도
         </a>
         에서 마르스와 베누스를 이어서 볼 수 있습니다. 전설 탭의 알바 롱가 왕 목록은 연대를 메운 전승입니다.
       </p>
+      <SisterStrip title="다른 가족관계도" en="Other family trees" links={OTHER_FAMILY_TREES} />
       <FamilyTreeView />
 
       {TREES.map((tree) => (
@@ -76,7 +79,7 @@ export default function FamilyTreePage() {
                       {node.years ? <span className="ml-2 text-terra">{node.years}</span> : null}
                       {node.href ? (
                         node.href.startsWith("http") ? (
-                          <a href={node.href} className="ml-2 text-laurel" rel="noopener noreferrer">
+                          <a href={node.href} className="ml-2 text-laurel" target="_blank" rel="noopener noreferrer">
                             {node.hrefLabel ?? "링크"}
                           </a>
                         ) : (
@@ -88,6 +91,7 @@ export default function FamilyTreePage() {
                       <span className="mt-0.5 block text-ink">{node.summary}</span>
                       {node.note ? <span className="mt-0.5 block text-xs leading-5 text-dusk">다른 이야기: {node.note}</span> : null}
                       {node.parentNote ? <span className="mt-0.5 block text-xs leading-5 text-muted">{node.parentNote}</span> : null}
+                      <Elsewhere links={node.also} />
                       <span className="mt-1 block text-xs leading-5 text-muted">
                         <Kin label="부모" people={rel.parents} />
                         <Kin label="입양한 부모" people={rel.adoptiveParents} />

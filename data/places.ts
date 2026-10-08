@@ -40,7 +40,7 @@ export const regions: readonly Region[] = [
           "이 족보 이야기는 역사 기록이 아니라 로마가 자기 기원을 설명한 방식입니다. 신화 쪽 줄기는 [나두신화의 아이네이스](https://nadoo-myth.vercel.app/stories/aeneid)에서 읽을 수 있습니다.",
           "기원전 90년 무렵 이탈리아 동맹시들이 시민권을 요구하며 싸운 전쟁(동맹시 전쟁)이 끝난 뒤, 이탈리아 자유민의 상당수가 로마 시민이 됩니다.",
         ],
-        links: [{ href: "/myth-links", label: "아이네이스와 신화" }],
+        links: [{ href: "/family-tree?tree=legend&focus=aeneas", label: "가족관계도의 아이네이아스" }],
       },
       {
         id: "etruria",

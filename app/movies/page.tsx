@@ -2,8 +2,10 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { JsonLd } from "@/components/JsonLd";
 import { MovieCard } from "@/components/RelatedMovies";
 import { PageHead } from "@/components/PageHead";
+import { SisterStrip } from "@/components/SisterSites";
 import { movies } from "@/data/movies";
 import { breadcrumbLd, itemListLd, jsonLd, pageMetadata } from "@/lib/seo";
+import { OTHER_FILM_PAGES } from "@/lib/site";
 
 export const metadata = pageMetadata({
   title: "관련 영화",
@@ -38,6 +40,7 @@ export default function MoviesPage() {
           <MovieCard key={movie.slug} movie={movie} />
         ))}
       </ul>
+      <SisterStrip title="다른 사이트의 영화" en="Films on sister sites" links={OTHER_FILM_PAGES} />
     </div>
   );
 }

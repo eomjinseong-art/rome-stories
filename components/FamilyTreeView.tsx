@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { Elsewhere } from "@/components/Elsewhere";
 import { useEffect, useId, useMemo, useRef, useState } from "react";
 import {
   DEFAULT_TREE_ID,
@@ -406,6 +407,7 @@ export function FamilyTreeView() {
               전체 가계도
             </button>
           </div>
+          <Elsewhere links={selectedNode.also} />
         </section>
       ) : null}
     </div>

@@ -21,7 +21,7 @@ const PATH = [
   { href: "/cleopatra", label: "클레오파트라는 왜 로마 정치의 한복판에 있나" },
   { href: "/rulers/augustus", label: "아우구스투스가 ‘황제’가 된 방식" },
   { href: "/daily", label: "영화 연회가 아닌 평범한 하루" },
-  { href: "/myth-links", label: "유피테르와 제우스를 나두신화와 연결" },
+  { href: "/myth-links#zeus-jupiter", label: "유피테르와 제우스를 나두신화와 연결" },
 ];
 
 export default function Home() {
@@ -41,7 +41,7 @@ export default function Home() {
           <Link href="/origins" className="rounded-full bg-terra px-4 py-2 text-white hover:bg-terra-deep">
             시대부터 보기
           </Link>
-          <a href={MYTH_URL} className="rounded-full border border-line bg-card px-4 py-2 hover:border-terra" rel="noopener noreferrer">
+          <a href={MYTH_URL} className="rounded-full border border-line bg-card px-4 py-2 hover:border-terra" target="_blank" rel="noopener noreferrer">
             {MYTH_NAME}에서 신화 읽기
           </a>
         </div>
