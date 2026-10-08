@@ -64,7 +64,13 @@ export default function RulersPage() {
       </section>
       <section className="mt-10">
         <h2 className="font-serif text-2xl text-ink">길을 잡는 황제 열 사람</h2>
-        <p className="mt-1 text-sm text-muted">기원전 27년부터 4세기까지. 카이사르는 황제가 아니라서 전쟁과 클레오파트라 글에 있습니다.</p>
+        <p className="mt-1 text-sm text-muted">
+        기원전 27년부터 4세기까지. 카이사르는 황제가 아니라서 전쟁과 클레오파트라 글에 있습니다. 혈연과 입양은{" "}
+        <Link href="/family-tree" className="text-laurel underline decoration-line underline-offset-4 hover:text-terra">
+          가족관계도
+        </Link>
+        에 그렸습니다.
+      </p>
         <RulerList people={emperors} />
       </section>
       <RelatedMovies topic="rulers" />

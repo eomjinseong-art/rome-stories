@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { GuideBlock } from "@/components/GuideBlock";
 import { JsonLd } from "@/components/JsonLd";
@@ -5,6 +6,7 @@ import { PageHead } from "@/components/PageHead";
 import { RelatedMovies } from "@/components/RelatedMovies";
 import { SourceList } from "@/components/SourceList";
 import { cleoSections, cleoSources } from "@/data/cleopatra";
+import { focusHref } from "@/data/family-tree";
 import { articleLd, breadcrumbLd, jsonLd, pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
@@ -51,6 +53,13 @@ export default function CleopatraPage() {
           />
         ))}
       </div>
+      <p className="mt-6 text-sm leading-7 text-muted">
+        카이사르, 카이사리온, 안토니우스, 옥타비아와의 관계는{" "}
+        <Link href={focusHref("cleopatra")} className="text-laurel underline decoration-line underline-offset-4 hover:text-terra">
+          가족관계도
+        </Link>
+        에서 이어서 볼 수 있습니다.
+      </p>
       <RelatedMovies topic="cleopatra" />
       <SourceList sources={cleoSources} />
     </article>

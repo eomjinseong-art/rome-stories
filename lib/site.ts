@@ -25,6 +25,7 @@ export const NAV = [
   { href: "/origins", label: "탄생·시대" },
   { href: "/map", label: "지도·지역" },
   { href: "/rulers", label: "왕·황제" },
+  { href: "/family-tree", label: "가족관계도" },
   { href: "/cleopatra", label: "클레오파트라" },
   { href: "/wars", label: "전쟁" },
   { href: "/daily", label: "일상" },
@@ -52,6 +53,12 @@ export const HOME_SECTIONS = [
     en: "Rulers",
     title: "왕·황제",
     desc: "전승 속 왕 일곱 사람과, 제정을 이해하는 데 필요한 황제 열 사람. 전체 명단은 아닙니다.",
+  },
+  {
+    href: "/family-tree",
+    en: "Family Tree",
+    title: "가족관계도",
+    desc: "전설의 왕가와 황제 가문. 혈연은 금색 실선, 로마에서 흔했던 입양은 금색 점선으로 나눕니다.",
   },
   {
     href: "/cleopatra",
