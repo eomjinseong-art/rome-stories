@@ -59,6 +59,7 @@ export const eras: readonly Era[] = [
       "동쪽 로마는 콘스탄티노플(지금의 이스탄불)을 수도로 1453년까지 이어졌습니다. 그곳 사람들은 자신을 로마인이라 불렀습니다. ‘로마가 476년에 멸망했다’는 한 줄은 서쪽만 말한 것입니다.",
       "3세기 말 디오클레티아누스는 황제를 넷으로 나누는 체제(테트라키아, 사두정치)를 시도했습니다. 콘스탄티누스는 다시 한 사람의 지배로 모았고, 그리스도교를 박해의 대상에서 공인된 종교 쪽으로 옮겼습니다. 제국의 공식 종교가 된 결정적인 조치는 380년 테오도시우스 때의 일입니다.",
       "영화 [라스트 리전](/movies#last-legion)은 이 끝을 모험담으로 바꿉니다. 황제 개인은 [왕·황제](/rulers)에서 고르면 됩니다.",
+      "국경 너머의 이야기는 게르만이야기에 있습니다. [토이토부르크(9년)](https://germanic-stories.vercel.app/chronicle/teutoburg), [아드리아노플(378년)](https://germanic-stories.vercel.app/chronicle/adrianople), [410년 로마 약탈](https://germanic-stories.vercel.app/chronicle/sack-410), [455년 반달족의 로마 약탈](https://germanic-stories.vercel.app/chronicle/sack-455), [오도아케르와 476년](https://germanic-stories.vercel.app/chronicle/odoacer-476)을 게르만 쪽에서 읽습니다.",
     ],
   },
 ];

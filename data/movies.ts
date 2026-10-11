@@ -14,6 +14,7 @@ export const movies: readonly Movie[] = [
       { href: "/rulers/marcus-aurelius", label: "마르쿠스 아우렐리우스" },
       { href: "/army", label: "군인" },
       { href: "https://philosophy-stories.vercel.app/films#films-marcus-aurelius", label: "철학이야기에서 마르쿠스 아우렐리우스 영화 보기" },
+      { href: "https://germanic-stories.vercel.app/films#gladiator-2000", label: "게르만이야기에서 오프닝의 게르마니아 전선 보기" },
     ],
   },
   {
@@ -116,6 +117,7 @@ export const movies: readonly Movie[] = [
       { href: "/rulers/tiberius", label: "티베리우스" },
       { href: "/rulers/claudius", label: "클라우디우스" },
       { href: "/rulers/nero", label: "네로" },
+      { href: "https://germanic-stories.vercel.app/films#i-claudius-1976", label: "게르만이야기에서 게르마니쿠스 쪽으로 보기" },
     ],
   },
   {
@@ -130,6 +132,8 @@ export const movies: readonly Movie[] = [
     links: [
       { href: "/rulers/marcus-aurelius", label: "마르쿠스 아우렐리우스" },
       { href: "/origins#empire", label: "제정 시대" },
+      { href: "https://germanic-stories.vercel.app/chronicle/marcomannic-war", label: "게르만이야기에서 마르코만니 전쟁 보기" },
+      { href: "https://germanic-stories.vercel.app/films#fall-of-the-roman-empire-1964", label: "게르만이야기의 로마제국의 멸망 해설" },
     ],
   },
   {
@@ -155,7 +159,11 @@ export const movies: readonly Movie[] = [
     why: "서로마의 마지막 황제 로물루스 아우구스툴루스라는 이름을 영화에서 들어 봤다면, 그 인상이 어디서 왔는지 확인할 때 씁니다.",
     fiction: "역사와 거리가 멉니다. 476년 폐위된 소년 황제를 브리튼과 아서 왕 전설에 연결한 모험물입니다. 마지막 군단이 칼을 들고 영국으로 가 새 나라를 세웠다는 줄거리는 사료가 아닙니다. 서로마의 끝은 이 사이트의 시대 글을 기준으로 보세요.",
     topics: ["origins", "rulers"],
-    links: [{ href: "/origins#empire", label: "제정의 끝" }],
+    links: [
+      { href: "/origins#empire", label: "제정의 끝" },
+      { href: "https://germanic-stories.vercel.app/chronicle/odoacer-476", label: "게르만이야기에서 오도아케르와 476년 보기" },
+      { href: "https://germanic-stories.vercel.app/films#the-last-legion-2007", label: "게르만이야기의 라스트 리전 해설" },
+    ],
   },
 ];
 
