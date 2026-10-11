@@ -21,6 +21,7 @@ export const SISTER_SITES = [
   { href: "https://philosophy-stories.vercel.app", label: "철학이야기", en: "Philosophy" },
   { href: "https://korea-stories.vercel.app", label: "대한민국이야기", en: "Korea" },
   { href: "https://nadoo-world.vercel.app", label: "나두세계", en: "World" },
+  { href: "https://nadoo-arts.vercel.app", label: "나두예술", en: "Arts" },
   { href: "https://nadoo-timeline.vercel.app", label: "나두연표", en: "Timeline" },
   { href: "https://tinalinkeom.vercel.app", label: "나두 허브", en: "Nadoo Hub" },
 ] as const;
