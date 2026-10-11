@@ -235,6 +235,8 @@ export const rulers: readonly Ruler[] = [
       { href: "/rulers/tiberius", label: "다음 황제 티베리우스" },
       { href: "https://egypt-stories.vercel.app/cleopatra", label: "이집트이야기에서 클레오파트라 보기" },
       { href: "https://the-chosen-korean.vercel.app/bible-books/luke", label: "더 초즌에서 누가복음(인구 조사) 보기" },
+      { href: "https://germanic-stories.vercel.app/chronicle/augustus-germania", label: "게르만이야기에서 아우구스투스의 게르마니아 원정 보기" },
+      { href: "https://germanic-stories.vercel.app/chronicle/teutoburg", label: "게르만이야기에서 토이토부르크 숲 전투(서기 9년) 보기" },
     ],
   },
   {
@@ -266,6 +268,7 @@ export const rulers: readonly Ruler[] = [
       { href: "/rulers/augustus", label: "아우구스투스" },
       { href: "https://the-chosen-korean.vercel.app/characters/pilate", label: "더 초즌에서 빌라도 보기" },
       { href: "https://nadoo-timeline.vercel.app/events/crucifixion-of-jesus", label: "나두연표에서 예수의 십자가형 보기" },
+      { href: "https://germanic-stories.vercel.app/chronicle/germanicus", label: "게르만이야기에서 게르마니쿠스의 보복 원정 보기" },
     ],
   },
   {
@@ -466,6 +469,7 @@ export const rulers: readonly Ruler[] = [
       { href: "/movies#gladiator", label: "글래디에이터 해설" },
       { href: "https://philosophy-stories.vercel.app/people/marcus-aurelius", label: "철학이야기에서 마르쿠스 아우렐리우스 보기" },
       { href: "https://philosophy-stories.vercel.app/people/epictetus", label: "철학이야기에서 에픽테토스 보기" },
+      { href: "https://germanic-stories.vercel.app/chronicle/marcomannic-war", label: "게르만이야기에서 마르코만니 전쟁 보기" },
     ],
   },
   {
@@ -529,6 +533,9 @@ export const rulers: readonly Ruler[] = [
       { href: "/movies#last-legion", label: "라스트 리전은 이 시대가 아닙니다" },
       { href: "https://nadoo-timeline.vercel.app/events/edict-of-milan", label: "나두연표에서 밀라노 칙령 보기" },
       { href: "https://nadoo-timeline.vercel.app/events/council-of-nicaea", label: "나두연표에서 니케아 공의회 보기" },
+      { href: "https://germanic-stories.vercel.app/chronicle/adrianople", label: "게르만이야기에서 아드리아노플(378년) 보기" },
+      { href: "https://germanic-stories.vercel.app/chronicle/odoacer-476", label: "게르만이야기에서 오도아케르와 476년 보기" },
+      { href: "https://viking-stories.vercel.app/chronicle/varangian-guard", label: "바이킹이야기에서 콘스탄티노플의 바랑기아 친위대 보기" },
     ],
   },
 ];

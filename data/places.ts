@@ -237,7 +237,12 @@ export const regions: readonly Region[] = [
         more: [
           "‘야만족이 밀고 들어와 하루아침에 로마가 무너졌다’는 그림은 너무 단순합니다. 4–5세기 서쪽에서는 로마 장군, 황제, 고트족 같은 집단이 같은 정치판 안에서 싸웁니다.",
         ],
-        links: [{ href: "/rulers/marcus-aurelius", label: "마르쿠스 아우렐리우스" }],
+        links: [
+          { href: "/rulers/marcus-aurelius", label: "마르쿠스 아우렐리우스" },
+          { href: "https://germanic-stories.vercel.app/chronicle/teutoburg", label: "게르만이야기에서 토이토부르크 보기" },
+          { href: "https://germanic-stories.vercel.app/chronicle/limes", label: "게르만이야기에서 라인·도나우 국경(리메스) 보기" },
+          { href: "https://germanic-stories.vercel.app/tribes", label: "게르만이야기의 부족 지도" },
+        ],
       },
       {
         id: "dacia",
