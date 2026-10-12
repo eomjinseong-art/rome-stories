@@ -313,6 +313,7 @@ export const SEASONS: Season[] = [
     ],
     links: [
       { href: "/rulers/marcus-aurelius", label: "마르쿠스 아우렐리우스" },
+      { href: "/meditations", label: "명상록" },
       { href: "/movies#gladiator", label: "글래디에이터" },
       { href: "/movies#fall-of-the-roman-empire", label: "로마제국의 멸망" },
     ],

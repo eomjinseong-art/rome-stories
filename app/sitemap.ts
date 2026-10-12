@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { EPISODES, episodePath } from "@/data/roman-empire";
+import { MED_BOOKS } from "@/data/meditations";
 import { rulers } from "@/data/rulers";
 import { wars } from "@/data/wars";
 import { SITE_URL } from "@/lib/site";
@@ -19,6 +20,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/movies",
     "/sources",
     "/roman-empire",
+    "/meditations",
+    "/meditations/stoicism",
+    "/meditations/teachers",
+    "/meditations/quiz",
+    ...MED_BOOKS.map((b) => `/meditations/book-${b.n}`),
     "/roman-empire/s1",
     "/roman-empire/s2",
     "/roman-empire/s3",
