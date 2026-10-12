@@ -230,6 +230,7 @@ export const rulers: readonly Ruler[] = [
     ],
     movieSlugs: ["rome-hbo", "i-claudius", "cleopatra-1963"],
     related: [
+      { href: "/roman-empire/s2", label: "드라마 로마 제국 시즌 2: 카이사르" },
       { href: "/wars/actium", label: "악티움" },
       { href: "/cleopatra", label: "클레오파트라" },
       { href: "/rulers/tiberius", label: "다음 황제 티베리우스" },
@@ -265,6 +266,7 @@ export const rulers: readonly Ruler[] = [
     ],
     movieSlugs: ["i-claudius", "ben-hur"],
     related: [
+      { href: "/roman-empire/s3", label: "드라마 로마 제국 시즌 3: 칼리굴라" },
       { href: "/rulers/augustus", label: "아우구스투스" },
       { href: "https://the-chosen-korean.vercel.app/characters/pilate", label: "더 초즌에서 빌라도 보기" },
       { href: "https://nadoo-timeline.vercel.app/events/crucifixion-of-jesus", label: "나두연표에서 예수의 십자가형 보기" },
@@ -299,6 +301,7 @@ export const rulers: readonly Ruler[] = [
     ],
     movieSlugs: ["i-claudius"],
     related: [
+      { href: "/roman-empire/s3/e4", label: "드라마 로마 제국: 칼리굴라의 최후와 클라우디우스" },
       { href: "/map#britannia", label: "브리타니아" },
       { href: "/rulers/nero", label: "네로" },
       { href: "https://the-chosen-korean.vercel.app/bible-books/acts", label: "더 초즌에서 사도행전 보기" },
@@ -465,6 +468,7 @@ export const rulers: readonly Ruler[] = [
     ],
     movieSlugs: ["gladiator", "fall-of-the-roman-empire"],
     related: [
+      { href: "/roman-empire/s1", label: "드라마 로마 제국 시즌 1: 콤모두스" },
       { href: "/army", label: "군인" },
       { href: "/movies#gladiator", label: "글래디에이터 해설" },
       { href: "https://philosophy-stories.vercel.app/people/marcus-aurelius", label: "철학이야기에서 마르쿠스 아우렐리우스 보기" },

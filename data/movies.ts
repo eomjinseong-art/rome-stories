@@ -137,6 +137,23 @@ export const movies: readonly Movie[] = [
     ],
   },
   {
+    slug: "roman-empire-2016",
+    titleKo: "로마 제국: 피로 물든 왕좌",
+    titleOriginal: "Roman Empire",
+    year: "2016–2019",
+    kind: "시리즈",
+    why: "넷플릭스 다큐드라마. 시즌마다 한 사람을 다룹니다. 콤모두스(6화), 율리우스 카이사르(5화), 칼리굴라(4화). 극과 역사학자 인터뷰가 섞여 있습니다.",
+    fiction: "큰 줄기는 카시우스 디오, 수에토니우스, 타키투스를 따릅니다. 다만 칼리굴라와 누이들의 근친, 클라우디우스가 암살을 승인했다는 장면처럼 소문이나 극의 해석을 사실처럼 보여 주는 곳이 있습니다. 넷플릭스 한국 제목은 ‘로마 제국’입니다.",
+    topics: ["rulers", "cleopatra"],
+    links: [
+      { href: "/roman-empire", label: "회차 가이드 (전체 스포일러)" },
+      { href: "/roman-empire/s1", label: "시즌 1 콤모두스" },
+      { href: "/roman-empire/s2", label: "시즌 2 카이사르" },
+      { href: "/roman-empire/s3", label: "시즌 3 칼리굴라" },
+      { href: "https://nadoo-timeline.vercel.app/movies#roman-empire-2016", label: "나두연표에서 보기" },
+    ],
+  },
+  {
     slug: "pompeii-2014",
     titleKo: "폼페이: 최후의 날",
     titleOriginal: "Pompeii",
