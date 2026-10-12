@@ -468,6 +468,7 @@ export const rulers: readonly Ruler[] = [
     ],
     movieSlugs: ["gladiator", "fall-of-the-roman-empire"],
     related: [
+      { href: "/meditations", label: "명상록 12권 가이드" },
       { href: "/roman-empire/s1", label: "드라마 로마 제국 시즌 1: 콤모두스" },
       { href: "/army", label: "군인" },
       { href: "/movies#gladiator", label: "글래디에이터 해설" },
