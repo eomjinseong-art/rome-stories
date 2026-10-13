@@ -7,6 +7,7 @@ import { PageHead } from "@/components/PageHead";
 import { RelatedLinks } from "@/components/RelatedLinks";
 import { MED_BOOKS } from "@/data/meditations";
 import { articleLd, breadcrumbLd, jsonLd, pageMetadata } from "@/lib/seo";
+import { CoupangCard } from "@/components/CoupangCard";
 
 export const dynamicParams = false;
 export function generateStaticParams() {
@@ -90,6 +91,7 @@ export default async function BookPage({ params }: { params: Promise<{ book: str
         ) : null}
       </nav>
       <RelatedLinks links={MED_LINKS} />
+      <CoupangCard />
     </article>
   );
 }

@@ -7,6 +7,7 @@ import { RelatedLinks } from "@/components/RelatedLinks";
 import { focusHref } from "@/data/family-tree";
 import { EPISODES, PEOPLE, SEASONS, episodePath, seasonPath } from "@/data/roman-empire";
 import { breadcrumbLd, canonicalUrl, clip, jsonLd, pageMetadata } from "@/lib/seo";
+import { CoupangCard } from "@/components/CoupangCard";
 
 export const dynamicParams = false;
 export function generateStaticParams() {
@@ -99,6 +100,7 @@ export default async function EpisodePage({ params }: { params: Promise<{ season
         </div>
       </section>
 
+      <CoupangCard />
       <section className="mt-10" aria-labelledby="cast">
         <h2 id="cast" className="font-serif text-2xl text-ink">이 화의 인물</h2>
         <ul className="mt-3 grid gap-3 sm:grid-cols-2">
