@@ -13,6 +13,7 @@ import { SourceList } from "@/components/SourceList";
 import { rulerTreeHref } from "@/data/family-tree";
 import { emperors, kings, rulerBySlug, rulers } from "@/data/rulers";
 import { articleLd, breadcrumbLd, jsonLd, pageMetadata } from "@/lib/seo";
+import { NadooHubPersonLink } from "@/components/NadooHubLink";
 
 export function generateStaticParams() {
   return rulers.map((ruler) => ({ slug: ruler.slug }));
@@ -103,6 +104,7 @@ export default async function RulerPage({ params }: { params: Promise<{ slug: st
         prev={prev ? { href: `/rulers/${prev.slug}`, label: prev.nameKo } : undefined}
         next={next ? { href: `/rulers/${next.slug}`, label: next.nameKo } : undefined}
       />
+      <NadooHubPersonLink base="https://rome-stories.vercel.app/rulers/" slug={ruler.slug!} />
     </article>
   );
 }
