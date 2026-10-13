@@ -6,6 +6,7 @@ import { PageHead } from "@/components/PageHead";
 import { RelatedLinks } from "@/components/RelatedLinks";
 import { EPISODES, SEASONS, episodePath, seasonPath } from "@/data/roman-empire";
 import { breadcrumbLd, itemListLd, jsonLd, pageMetadata } from "@/lib/seo";
+import { CoupangCard } from "@/components/CoupangCard";
 
 export const dynamicParams = false;
 export function generateStaticParams() {
@@ -60,6 +61,7 @@ export default async function SeasonPage({ params }: { params: Promise<{ season:
         </ol>
       </section>
 
+      <CoupangCard />
       <section className="mt-10" aria-labelledby="after">
         <h2 id="after" className="font-serif text-2xl text-ink">그 뒤 실제로는</h2>
         <ul className="mt-3 list-disc space-y-2 pl-5 text-sm leading-7">
