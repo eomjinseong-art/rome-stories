@@ -17,6 +17,7 @@ export const metadata = pageMetadata({
 const PATH = [
   { href: "/origins", label: "왕정·공화정·제정이 어떻게 다른지" },
   { href: "/map", label: "지역 탐험 지도: 핀 22곳과 한니발·카이사르 원정 경로" },
+  { href: "/city", label: "로마 시내 탐험: 콜로세움부터 카이사르가 쓰러진 자리까지" },
   { href: "/wars/second-punic-war", label: "한니발이 알프스를 넘은 이유" },
   { href: "/wars/caesar-civil-war", label: "카이사르가 루비콘을 건넌 뒤" },
   { href: "/generals", label: "스키피오부터 벨리사리우스까지, 유명한 장군 18명" },

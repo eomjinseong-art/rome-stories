@@ -20,6 +20,7 @@ export type MapPin = {
   wars: MapLink[];
   films: MapLink[];
   stories: MapStory[];
+  more?: MapLink[];
 };
 export type RouteStep = { lon: number; lat: number; place: string; year: string; ko: string; en: string };
 export type MapRoute = { id: string; era: MapEra; ko: string; en: string; color: string; note?: string; steps: RouteStep[]; links: MapLink[] };
@@ -53,6 +54,7 @@ export const MAP_PINS: MapPin[] = [
     people: [r("romulus", "로물루스"), r("tarquinius-superbus", "타르퀴니우스"), g("caesar", "카이사르"), r("nero", "네로"), g("vespasian-titus", "베스파시아누스·티투스"), g("belisarius", "벨리사리우스"), f("caesar", "카이사르")],
     wars: [w("veii-and-gallic-sack", "베이이와 갈리아의 로마 약탈"), w("stilicho-goths", "스틸리코와 고트족"), w("justinian-reconquest", "유스티니아누스의 재정복")],
     films: [m("gladiator", "글래디에이터"), m("quo-vadis", "쿠오 바디스"), m("julius-caesar-1953", "줄리어스 시저(1953)"), m("fall-of-the-roman-empire", "로마제국의 멸망")],
+    more: [{ href: "/city", label: "로마 시내 탐험: 건물 27곳" }, { href: "/city#colosseum", label: "콜로세움" }, { href: "/city#pompey", label: "카이사르가 쓰러진 곳" }],
     stories: [
       { ko: "기원전 753년 4월 21일 로물루스가 도시를 세웠다는 날짜는 후대의 계산입니다.", en: "The 753 BC founding date is a later reckoning." },
       { ko: "갈리아인이 밤에 카피톨리움을 오를 때 유노 신전의 거위가 울어 막았다는 이야기(리비우스).", en: "Juno's sacred geese saved the Capitol (Livy)." },

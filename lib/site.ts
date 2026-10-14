@@ -62,6 +62,7 @@ export const COUPANG_URL = "https://link.coupang.com/a/hsdzLh1vB6";
 export const NAV = [
   { href: "/origins", label: "탄생·시대" },
   { href: "/map", label: "지도·지역" },
+  { href: "/city", label: "로마 시내" },
   { href: "/rulers", label: "왕·황제" },
   { href: "/family-tree", label: "가족관계도" },
   { href: "/cleopatra", label: "클레오파트라" },
@@ -86,6 +87,12 @@ export const HOME_SECTIONS = [
     en: "Places",
     title: "지도·지역",
     desc: "이탈리아의 작은 도시가 지중해 연안과 유럽의 변경까지 손을 뻗친 길을 지역 카드로 봅니다.",
+  },
+  {
+    href: "/city",
+    en: "City of Rome",
+    title: "로마 시내 탐험",
+    desc: "콜로세움·포룸·판테온 등 건물 27곳을 사진과 지도로, 카이사르의 마지막 날을 걸어서 따라갑니다.",
   },
   {
     href: "/rulers",

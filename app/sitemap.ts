@@ -11,6 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "",
     "/origins",
     "/map",
+    "/city",
     "/rulers",
     "/family-tree",
     "/cleopatra",
