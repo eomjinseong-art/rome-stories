@@ -5,6 +5,7 @@ import { CoupangCard } from "@/components/CoupangCard";
 import { JsonLd } from "@/components/JsonLd";
 import { Pager } from "@/components/Pager";
 import { RelatedLinks } from "@/components/RelatedLinks";
+import { cityLinksFor } from "@/data/city-explorer";
 import { RelatedMovies } from "@/components/RelatedMovies";
 import { SourceList } from "@/components/SourceList";
 import { focusHref } from "@/data/family-tree";
@@ -107,6 +108,7 @@ export default async function GeneralPage({ params }: { params: Promise<{ slug: 
       ) : null}
 
       {family.length ? <RelatedLinks title="가족·황제" links={family} /> : null}
+      {cityLinksFor("generals", g.slug).length ? <RelatedLinks title="로마 시내에서 보기" links={cityLinksFor("generals", g.slug)} /> : null}
       <RelatedLinks title="자매 사이트에서 이어 보기" links={g.external} />
       {g.movieSlugs.length ? (
         <RelatedMovies slugs={g.movieSlugs} />

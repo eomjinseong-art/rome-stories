@@ -15,6 +15,7 @@ import { emperors, kings, rulerBySlug, rulers } from "@/data/rulers";
 import { articleLd, breadcrumbLd, jsonLd, pageMetadata } from "@/lib/seo";
 import { NadooHubPersonLink } from "@/components/NadooHubLink";
 import { CoupangCard } from "@/components/CoupangCard";
+import { cityLinksFor } from "@/data/city-explorer";
 
 export function generateStaticParams() {
   return rulers.map((ruler) => ({ slug: ruler.slug }));
@@ -86,7 +87,7 @@ export default async function RulerPage({ params }: { params: Promise<{ slug: st
           </p>
         ))}
       </More>
-      <RelatedLinks links={treeHref ? [...ruler.related, { href: treeHref, label: "가족관계도에서 보기" }] : ruler.related} />
+      <RelatedLinks links={[...ruler.related, ...(treeHref ? [{ href: treeHref, label: "가족관계도에서 보기" }] : []), ...cityLinksFor("rulers", ruler.slug)]} />
       {ruler.movieSlugs.length ? (
         <RelatedMovies slugs={ruler.movieSlugs} />
       ) : (

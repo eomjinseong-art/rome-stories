@@ -243,6 +243,7 @@ export function RegionExplorer({ pins, routes, eras, storyNote }: { pins: MapPin
                 <LinkRow title="전쟁" en="Wars" links={pin.wars} />
                 <LinkRow title="인물" en="People" links={pin.people} />
                 <LinkRow title="관련 영화" en="Films" links={pin.films} />
+                {pin.more ? <LinkRow title="더 보기" en="Explore" links={pin.more} /> : null}
                 {pin.stories.length ? (
                   <div className="mt-4 rounded-md border border-dashed border-[#a6843d] bg-[#fbf3e6] p-3">
                     <p className="text-xs font-medium text-[#8a5a24]">
