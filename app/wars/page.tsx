@@ -11,7 +11,7 @@ import { breadcrumbLd, itemListLd, jsonLd, pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
   title: "전쟁",
-  description: "피로스 전쟁부터 악티움까지, 로마를 키운 큰 전쟁을 원인·상대·결과로 정리합니다. 스파르타쿠스 반란은 영화와 닿는 곁가지로 붙였습니다.",
+  description: "전설 속 초기 공화정부터 벨리사리우스의 재정복까지, 로마의 큰 전쟁과 전투를 원인·상대·결과로 정리합니다. 스파르타쿠스 반란은 영화와 닿는 곁가지로 붙였습니다.",
   path: "/wars",
 });
 

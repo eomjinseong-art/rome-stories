@@ -19,6 +19,7 @@ const PATH = [
   { href: "/map", label: "이탈리아에서 지중해로 넓어진 지도" },
   { href: "/wars/second-punic-war", label: "한니발이 알프스를 넘은 이유" },
   { href: "/wars/caesar-civil-war", label: "카이사르가 루비콘을 건넌 뒤" },
+  { href: "/generals", label: "스키피오부터 벨리사리우스까지, 유명한 장군 18명" },
   { href: "/cleopatra", label: "클레오파트라는 왜 로마 정치의 한복판에 있나" },
   { href: "/rulers/augustus", label: "아우구스투스가 ‘황제’가 된 방식" },
   { href: "/daily", label: "영화 연회가 아닌 평범한 하루" },
