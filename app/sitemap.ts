@@ -1,3 +1,4 @@
+import { generals } from "@/data/generals";
 import type { MetadataRoute } from "next";
 import { EPISODES, episodePath } from "@/data/roman-empire";
 import { MED_BOOKS } from "@/data/meditations";
@@ -14,6 +15,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/family-tree",
     "/cleopatra",
     "/wars",
+    "/generals",
+    "/generals/quiz",
+    ...generals.map((g) => `/generals/${g.slug}`),
     "/daily",
     "/army",
     "/myth-links",

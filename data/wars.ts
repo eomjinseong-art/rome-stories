@@ -1,6 +1,7 @@
 import type { Source, War } from "@/data/types";
+import { WAR_ORDER, extraWars } from "@/data/wars-extra";
 
-export const wars: readonly War[] = [
+const baseWars: readonly War[] = [
   {
     slug: "pyrrhic-war",
     en: "PYRRHIC WAR",
@@ -268,6 +269,10 @@ export const servileRevolt = {
     { work: "아피아누스 『내전기』", ref: "1권" },
   ] as const satisfies readonly Source[],
 };
+
+export const wars: readonly War[] = [...baseWars, ...extraWars].sort(
+  (a, b) => WAR_ORDER.indexOf(a.slug as (typeof WAR_ORDER)[number]) - WAR_ORDER.indexOf(b.slug as (typeof WAR_ORDER)[number]),
+);
 
 const bySlug = new Map(wars.map((war) => [war.slug, war]));
 

@@ -66,6 +66,7 @@ export const NAV = [
   { href: "/family-tree", label: "가족관계도" },
   { href: "/cleopatra", label: "클레오파트라" },
   { href: "/wars", label: "전쟁" },
+  { href: "/generals", label: "장군" },
   { href: "/daily", label: "일상" },
   { href: "/army", label: "군인" },
   { href: "/myth-links", label: "신과 전설" },
@@ -109,6 +110,12 @@ export const HOME_SECTIONS = [
     en: "Wars",
     title: "전쟁",
     desc: "왜 싸웠는지, 누가 싸웠는지, 끝나서 무엇이 바뀌었는지를 전쟁마다 세 칸으로 적습니다.",
+  },
+  {
+    href: "/generals",
+    en: "Generals",
+    title: "유명한 장군",
+    desc: "킨키나투스부터 카이사르, 바루스, 벨리사리우스까지 18명. 주요 전투와 맞수, 관련 영화를 한 장에.",
   },
   {
     href: "/daily",
