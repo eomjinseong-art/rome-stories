@@ -164,7 +164,7 @@ export const generals: readonly General[] = [
     tales: ["해적에게 붙잡혔을 때 몸값을 올려 부르라 했다는 이야기", "‘브루투스, 너마저?’라는 마지막 말(셰익스피어의 대사입니다)"],
     movieSlugs: ["rome-hbo", "cleopatra-1963", "julius-caesar-1953"],
     treeId: "caesar",
-    external: [
+    external: [{ href: "https://egypt-stories.vercel.app/cleopatra", label: "이집트이야기 · 클레오파트라" }, 
       { href: `${T}/crossing-the-rubicon`, label: "나두연표에서 루비콘 보기" },
       { href: `${T}/assassination-of-caesar`, label: "나두연표에서 카이사르 암살 보기" },
       { href: `${G}/chronicle/ariovistus`, label: "게르만이야기에서 아리오비스투스와 카이사르 보기" },
@@ -185,7 +185,7 @@ export const generals: readonly General[] = [
     allies: ["카이사르", "술라"],
     tales: ["불난 집을 헐값에 사들이려고 사설 소방대를 굴렸다는 이야기", "죽은 뒤 입에 녹인 금을 부었다는 이야기"],
     movieSlugs: ["spartacus"],
-    external: [{ href: `${T}/spartacus-revolt`, label: "나두연표에서 스파르타쿠스 반란 보기" }],
+    external: [{ href: "https://persia-stories.vercel.app/generals/surena", label: "페르시아이야기 · 맞수 수레나스" }, { href: "https://persia-stories.vercel.app/wars/carrhae", label: "페르시아이야기 · 카르헤" }, { href: `${T}/spartacus-revolt`, label: "나두연표에서 스파르타쿠스 반란 보기" }],
     sources: [{ work: "플루타르코스 『영웅전』", ref: "크라수스" }],
   },
   {
@@ -203,7 +203,7 @@ export const generals: readonly General[] = [
     tales: ["카이사르 장례식에서 군중을 뒤흔든 연설(유명한 문장은 셰익스피어의 창작)", "클레오파트라와 ‘흉내 낼 수 없는 삶’ 모임을 만들었다는 이야기"],
     movieSlugs: ["rome-hbo", "cleopatra-1963", "julius-caesar-1953"],
     treeId: "antony",
-    external: [{ href: `${T}/battle-of-actium`, label: "나두연표에서 악티움 보기" }, { href: "https://egypt-stories.vercel.app", label: "이집트이야기" }],
+    external: [{ href: "https://egypt-stories.vercel.app/cleopatra", label: "이집트이야기 · 클레오파트라" }, { href: `${T}/battle-of-actium`, label: "나두연표에서 악티움 보기" }, { href: "https://egypt-stories.vercel.app", label: "이집트이야기" }],
     sources: [{ work: "플루타르코스 『영웅전』", ref: "안토니우스" }],
   },
   {
@@ -354,7 +354,7 @@ export const generals: readonly General[] = [
     allies: ["유스티니아누스", "안토니나(아내)", "프로코피오스(비서)"],
     tales: ["말년에 눈이 멀어 거리에서 구걸했다는 이야기(훨씬 뒤에 생긴 이야기입니다)"],
     movieSlugs: [],
-    external: [{ href: `${G}/kingdoms/ostrogoths`, label: "게르만이야기에서 동고트 왕국 보기" }, { href: "https://persia-stories.vercel.app", label: "페르시아이야기" }],
+    external: [{ href: "https://persia-stories.vercel.app/generals/khosrow-i", label: "페르시아이야기 · 맞수 호스로 1세" }, { href: "https://persia-stories.vercel.app/wars/khosrow-justinian", label: "페르시아이야기 · 사산과의 전쟁" }, { href: `${G}/kingdoms/ostrogoths`, label: "게르만이야기에서 동고트 왕국 보기" }, { href: "https://persia-stories.vercel.app", label: "페르시아이야기" }],
     sources: [{ work: "프로코피오스 『전쟁사』 『비사』" }],
   },
 ];
