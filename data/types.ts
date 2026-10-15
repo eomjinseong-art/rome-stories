@@ -20,6 +20,10 @@ export type Movie = {
   titleOriginal: string;
   year: string;
   kind: "영화" | "시리즈";
+  /** 작품이 그리는 시대의 시작 연도(기원전은 음수). 목록 정렬에만 씁니다. */
+  eraYear: number;
+  /** 카드에 보이는 시대 표시. 예: "기원전 73–71년 · 공화정 말기" */
+  eraLabel: string;
   why: string;
   fiction: string;
   topics: readonly MovieTopic[];

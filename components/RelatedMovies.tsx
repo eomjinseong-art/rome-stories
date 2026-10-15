@@ -5,7 +5,8 @@ import type { Movie, MovieTopic } from "@/data/types";
 export function MovieCard({ movie }: { movie: Movie }) {
   return (
     <li id={movie.slug} className="scroll-mt-40 rounded-lg border border-line bg-card p-4">
-      <p className="font-serif text-lg text-ink">
+      <p className="text-xs font-medium tracking-wide text-terra">{movie.eraLabel}</p>
+      <p className="mt-1 font-serif text-lg text-ink">
         「{movie.titleKo}」
         <span className="ml-2 font-sans text-sm font-normal text-muted">
           {movie.titleOriginal} · {movie.year} · {movie.kind}
@@ -54,7 +55,7 @@ export function RelatedMovies({
         관련 영화
       </h2>
       <p className="mt-2 text-sm leading-6 text-muted">
-        아래 작품은 로마를 무대로 한 극입니다. 분위기를 잡는 데는 도움이 되고, 사실 관계의 교과서는 아닙니다. 불법 영상 링크는 없습니다.
+        아래 작품은 로마를 무대로 한 극이며, 그리는 시대 순으로 놓았습니다. 분위기를 잡는 데는 도움이 되고, 사실 관계의 교과서는 아닙니다. 불법 영상 링크는 없습니다.
       </p>
       <ul className="mt-4 space-y-3">
         {list.map((movie) => (
