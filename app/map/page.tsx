@@ -1,6 +1,7 @@
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { GuideBlock } from "@/components/GuideBlock";
 import { JsonLd } from "@/components/JsonLd";
+import { withFilmsByEra } from "@/data/movies";
 import { PageHead } from "@/components/PageHead";
 import { CoupangCard } from "@/components/CoupangCard";
 import { RegionExplorer } from "@/components/RegionExplorer";
@@ -32,7 +33,7 @@ export default function MapPage() {
         title="지도·지역"
         lead="로마는 수도의 이름이면서 나라의 이름이었습니다. 아래 카드는 서쪽 바다에서 동쪽 왕국, 그리고 강가의 변경으로 나가는 순서입니다. 정확한 경계선은 세기마다 움직였습니다."
       />
-      <RegionExplorer pins={MAP_PINS} routes={MAP_ROUTES} eras={MAP_ERAS} storyNote={MAP_STORY_NOTE} />
+      <RegionExplorer pins={withFilmsByEra(MAP_PINS)} routes={MAP_ROUTES} eras={MAP_ERAS} storyNote={MAP_STORY_NOTE} />
       <CoupangCard copy={{ icon: "🗺️", ko: "모든 길은 로마로 통하지만, 로켓배송은 우리 집 문 앞으로 통해요", en: "All roads lead to Rome. This one leads to your door." }} />
       <h2 className="mt-12 font-serif text-2xl text-ink">
         지중해 지역 카드 <span className="text-sm tracking-wider text-muted">Beyond Italy</span>

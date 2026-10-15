@@ -3,7 +3,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { MovieCard } from "@/components/RelatedMovies";
 import { PageHead } from "@/components/PageHead";
 import { SisterStrip } from "@/components/SisterSites";
-import { movies } from "@/data/movies";
+import { moviesByEra, moviesGroupedByEra } from "@/data/movies";
 import { breadcrumbLd, itemListLd, jsonLd, pageMetadata } from "@/lib/seo";
 import { OTHER_FILM_PAGES } from "@/lib/site";
 import { NadooHubFilmsLink } from "@/components/NadooHubLink";
@@ -26,7 +26,7 @@ export default function MoviesPage() {
           itemListLd(
             "로마 관련 영화",
             "/movies",
-            movies.map((movie) => ({ name: movie.titleKo, path: `/movies#${movie.slug}` })),
+            moviesByEra.map((movie) => ({ name: movie.titleKo, path: `/movies#${movie.slug}` })),
           ),
         ])}
       />
@@ -34,13 +34,20 @@ export default function MoviesPage() {
       <PageHead
         kicker="FILMS"
         title="관련 영화"
-        lead="로마를 처음 상상할 때 영화가 먼저인 경우가 많습니다. 제목은 실제로 개봉한 작품만 적었습니다. 각 카드는 왜 보면 좋은지, 어디가 창작인지 두 문단으로 나눕니다. 스트리밍 링크는 없습니다."
+        lead="로마를 처음 상상할 때 영화가 먼저인 경우가 많습니다. 제목은 실제로 개봉한 작품만 적었습니다. 각 카드는 왜 보면 좋은지, 어디가 창작인지 두 문단으로 나눕니다. 스트리밍 링크는 없습니다. 목록은 개봉 연도가 아니라 작품이 그리는 시대 순서입니다."
       />
-      <ul className="mt-8 space-y-3">
-        {movies.map((movie) => (
-          <MovieCard key={movie.slug} movie={movie} />
-        ))}
-      </ul>
+      {moviesGroupedByEra().map(({ group, movies }) => (
+        <section key={group.id} className="mt-8" aria-labelledby={`era-${group.id}`}>
+          <h2 id={`era-${group.id}`} className="font-serif text-xl text-ink">
+            {group.ko} <span className="ml-1 font-sans text-xs tracking-wider text-muted">{group.en}</span>
+          </h2>
+          <ul className="mt-3 space-y-3">
+            {movies.map((movie) => (
+              <MovieCard key={movie.slug} movie={movie} />
+            ))}
+          </ul>
+        </section>
+      ))}
       <SisterStrip title="다른 사이트의 영화" en="Films on sister sites" links={OTHER_FILM_PAGES} />
       <NadooHubFilmsLink />
     </div>
