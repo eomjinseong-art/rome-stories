@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { GuideBlock } from "@/components/GuideBlock";
@@ -80,6 +81,7 @@ export default function OriginsPage() {
           <GuideBlock key={era.id} id={era.id} en={era.en} title={era.title} summary={`${era.years}. ${era.summary}`} points={era.points} more={era.more} kind={era.kind} />
         ))}
       </div>
+      <NadooAd inline />
       <p className="mt-6 text-sm leading-7 text-muted">
         지역이 어디인지 같이 보려면 <Link href="/map" className="text-laurel underline decoration-line underline-offset-4 hover:text-terra">지도·지역</Link>
         으로, 사람 이름은 <Link href="/rulers" className="text-laurel underline decoration-line underline-offset-4 hover:text-terra">왕·황제</Link>로, 아이네이아스부터 로물루스까지의 전승 가계는 <Link href="/family-tree?tree=legend" className="text-laurel underline decoration-line underline-offset-4 hover:text-terra">가족관계도</Link>로 가면 됩니다.

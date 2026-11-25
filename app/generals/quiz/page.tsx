@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { CoupangCard } from "@/components/CoupangCard";
 import { JsonLd } from "@/components/JsonLd";
@@ -19,6 +20,7 @@ export default function GeneralsQuizPage() {
       <JsonLd data={jsonLd([breadcrumbLd([{ name: "홈", path: "/" }, { name: "장군", path: "/generals" }, { name: "퀴즈", path: "/generals/quiz" }])])} />
       <Breadcrumbs items={[{ href: "/", label: "홈" }, { href: "/generals", label: "장군" }, { label: "퀴즈" }]} />
       <PageHead kicker="QUIZ" title="장군 퀴즈" lead="답을 생각한 뒤 ‘정답 보기’를 눌러 보세요." />
+      <NadooAd inline />
       <ol className="mt-8 space-y-4">
         {GENERALS_QUIZ.map((q, i) => (
           <li key={q.q} className="rounded-lg border border-line bg-card p-4 text-sm leading-7">

@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -87,6 +88,7 @@ export default async function RulerPage({ params }: { params: Promise<{ slug: st
           </p>
         ))}
       </More>
+      <NadooAd inline />
       <RelatedLinks links={[...ruler.related, ...(treeHref ? [{ href: treeHref, label: "가족관계도에서 보기" }] : []), ...cityLinksFor("rulers", ruler.slug)]} />
       {ruler.movieSlugs.length ? (
         <RelatedMovies slugs={ruler.movieSlugs} />

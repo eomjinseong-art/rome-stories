@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { GuideBlock } from "@/components/GuideBlock";
@@ -53,6 +54,7 @@ export default function CleopatraPage() {
           />
         ))}
       </div>
+      <NadooAd inline />
       <p className="mt-6 text-sm leading-7 text-muted">
         카이사르, 카이사리온, 안토니우스, 옥타비아와의 관계는{" "}
         <Link href={focusHref("cleopatra")} className="text-laurel underline decoration-line underline-offset-4 hover:text-terra">

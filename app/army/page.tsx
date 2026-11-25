@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { GuideBlock } from "@/components/GuideBlock";
 import { JsonLd } from "@/components/JsonLd";
@@ -30,6 +31,7 @@ export default function ArmyPage() {
         title="군인"
         lead="로마의 확장은 군단이 만들었습니다. 다만 군단의 모습도, 갑옷도, 복무의 성격도 왕정과 제정 후기가 다릅니다. 아래는 공화정 중기부터 제정 초를 중심으로 한 설명입니다."
       />
+      <NadooAd inline />
       <div className="mt-8 space-y-4">
         {armyTopics.map((topic) => (
           <GuideBlock key={topic.id} id={topic.id} en={topic.en} title={topic.title} summary={topic.summary} points={topic.points} more={topic.more} kind="history" />

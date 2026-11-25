@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { JsonLd } from "@/components/JsonLd";
@@ -30,6 +31,7 @@ export default function RomanEmpirePage() {
         title="로마 제국: 피로 물든 왕좌"
         lead="넷플릭스의 다큐드라마입니다. 배우의 극과 역사학자의 인터뷰, 해설이 섞여 있습니다. 세 시즌이 각각 한 사람을 다룹니다. 이 가이드는 결말까지 모두 적습니다."
       />
+      <NadooAd inline />
       <div className="mt-4 rounded-lg border border-line bg-card p-4 text-sm leading-7">
         <p>
           <b>제목:</b> 넷플릭스 한국 페이지의 작품 제목은 ‘로마 제국’이고, 시즌 이름은 ‘콤모두스: 피의 지배’, ‘율리우스 카이사르: 로마의 정복자’, ‘칼리굴라: 미치광이 황제’입니다. ‘피로 물든 왕좌’는 이 가이드의 부제이고 넷플릭스 표기가 아닙니다.

@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Elsewhere } from "@/components/Elsewhere";
@@ -45,6 +46,7 @@ export default function FamilyTreePage() {
         title="가족관계도"
         lead="누가 누구의 자녀인지, 누가 입양으로 황제가 됐는지를 가문마다 나눈 그림입니다. 금색 실선은 혈연, 금색 점선은 입양, 장미색은 배우자, 보라색 점선은 전승이 갈리는 부모입니다. 칸을 누르면 부모·배우자·자녀·형제가 밝아집니다."
       />
+      <NadooAd inline />
       <p className="mt-3 max-w-3xl text-sm leading-7 text-muted">
         신들의 가계는 이 사이트 밖입니다.{" "}
         <a href={`${MYTH_URL}/family-tree`} className="text-laurel underline decoration-line underline-offset-4 hover:text-terra" target="_blank" rel="noopener noreferrer">

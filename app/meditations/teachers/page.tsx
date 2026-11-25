@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { JsonLd } from "@/components/JsonLd";
@@ -20,6 +21,7 @@ export default function TeachersPage() {
       <Breadcrumbs items={[{ href: "/", label: "홈" }, { href: "/meditations", label: "명상록" }, { label: "스승들" }]} />
       <PageHead kicker="WHO INFLUENCED HIM" title="그에게 영향을 준 사람들" lead="명상록 1권은 ‘누구에게서 무엇을 배웠다’는 목록입니다. 번호는 1권의 절입니다." />
       <MedNav />
+      <NadooAd inline />
       <ul className="mt-8 grid gap-3 sm:grid-cols-2">
         {TEACHERS.map((t) => (
           <li key={t.en} className="rounded-lg border border-line bg-card p-4 text-sm leading-6">

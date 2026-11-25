@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { CityExplorer } from "@/components/CityExplorer";
@@ -26,6 +27,7 @@ export default function CityPage() {
         title="로마 시내 탐험"
         lead="일곱 언덕과 티베르강, 두 겹의 성벽 사이에 선 건물 27곳입니다. 핀을 누르면 사진과 지은 사람, 그곳에서 있었던 일, 그때와 지금이 열립니다. Explore 27 buildings of ancient Rome."
       />
+      <NadooAd inline />
       <CityExplorer pins={withFilmsByEra(CITY_PINS)} routes={CITY_ROUTES} images={CITY_IMAGES} eras={MAP_ERAS} storyNote={MAP_STORY_NOTE} />
       <CoupangCard copy={{ icon: "🏟️", ko: "로마는 하루아침에 지어지지 않았지만, 주문은 하루 만에 와요", en: "Rome wasn't built in a day. Your order might be." }} />
       <section className="mt-10" aria-labelledby="city-list">

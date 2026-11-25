@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { CoupangCard } from "@/components/CoupangCard";
@@ -67,6 +68,7 @@ export default function GeneralsPage() {
           </section>
         );
       })}
+      <NadooAd inline />
       <p className="mx-auto mt-10 max-w-3xl text-sm leading-7 text-muted">
         영화 「글래디에이터」의 막시무스는 지어낸 장군입니다. 실제 장군이 나오는 작품은 각 장군 페이지와{" "}
         <Link href="/movies" className="text-laurel underline underline-offset-4">
