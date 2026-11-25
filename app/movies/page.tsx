@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { JsonLd } from "@/components/JsonLd";
 import { MovieCard } from "@/components/RelatedMovies";
@@ -48,6 +49,7 @@ export default function MoviesPage() {
           </ul>
         </section>
       ))}
+      <NadooAd inline />
       <SisterStrip title="다른 사이트의 영화" en="Films on sister sites" links={OTHER_FILM_PAGES} />
       <NadooHubFilmsLink />
     </div>

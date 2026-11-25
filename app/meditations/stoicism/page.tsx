@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { JsonLd } from "@/components/JsonLd";
 import { MED_LINKS, MedNav } from "@/components/MedNav";
@@ -18,6 +19,7 @@ export default function StoicismPage() {
       <JsonLd data={jsonLd([breadcrumbLd([{ name: "홈", path: "/" }, { name: "명상록", path: "/meditations" }, { name: "스토아 기초", path: "/meditations/stoicism" }])])} />
       <Breadcrumbs items={[{ href: "/", label: "홈" }, { href: "/meditations", label: "명상록" }, { label: "스토아 기초" }]} />
       <PageHead kicker="STOICISM BASICS" title="스토아 철학 기초" lead="명상록은 스토아 철학을 몸에 익히려는 연습 노트입니다. 여섯 가지만 알면 훨씬 쉽게 읽힙니다." />
+      <NadooAd inline />
       <MedNav />
       <ol className="mt-8 space-y-3">
         {STOIC_BASICS.map((s, i) => (

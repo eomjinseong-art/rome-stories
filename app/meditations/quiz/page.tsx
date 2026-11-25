@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { JsonLd } from "@/components/JsonLd";
 import { MED_LINKS, MedNav } from "@/components/MedNav";
@@ -18,6 +19,7 @@ export default function QuizPage() {
       <JsonLd data={jsonLd([breadcrumbLd([{ name: "홈", path: "/" }, { name: "명상록", path: "/meditations" }, { name: "퀴즈", path: "/meditations/quiz" }])])} />
       <Breadcrumbs items={[{ href: "/", label: "홈" }, { href: "/meditations", label: "명상록" }, { label: "퀴즈" }]} />
       <PageHead kicker="QUIZ" title="명상록 퀴즈" lead="답을 생각한 뒤 ‘정답 보기’를 눌러 보세요." />
+      <NadooAd inline />
       <MedNav />
       <ol className="mt-8 space-y-4">
         {QUIZ.map((q, i) => (
