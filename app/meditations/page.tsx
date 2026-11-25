@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { JsonLd } from "@/components/JsonLd";
@@ -39,6 +40,7 @@ export default function MeditationsPage() {
         <p className="mt-2"><b>인용 원문:</b> 영어는 조지 롱(George Long)의 1862년 번역(퍼블릭 도메인, 프로젝트 구텐베르크)에서 그대로 옮겼고, 한국어는 이 사이트가 옮겼습니다. 번호는 권.절입니다.</p>
       </section>
 
+      <NadooAd inline />
       <section className="mt-10" aria-labelledby="books">
         <h2 id="books" className="font-serif text-2xl text-ink">12권</h2>
         <ol className="mt-3 grid gap-3 sm:grid-cols-2">

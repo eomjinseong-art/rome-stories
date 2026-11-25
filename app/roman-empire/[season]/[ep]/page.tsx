@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -101,6 +102,7 @@ export default async function EpisodePage({ params }: { params: Promise<{ season
       </section>
 
       <CoupangCard />
+      <NadooAd inline />
       <section className="mt-10" aria-labelledby="cast">
         <h2 id="cast" className="font-serif text-2xl text-ink">이 화의 인물</h2>
         <ul className="mt-3 grid gap-3 sm:grid-cols-2">

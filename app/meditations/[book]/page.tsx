@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -70,6 +71,7 @@ export default async function BookPage({ params }: { params: Promise<{ book: str
         </ul>
       </section>
 
+      <NadooAd inline />
       <section className="mt-10" aria-labelledby="today">
         <h2 id="today" className="font-serif text-2xl text-ink">오늘의 삶에서</h2>
         <p className="mt-3 text-sm leading-7">{b.today}</p>

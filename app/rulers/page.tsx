@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { JsonLd } from "@/components/JsonLd";
@@ -62,6 +63,7 @@ export default function RulersPage() {
         <p className="mt-1 text-sm text-muted">전통 연대 기원전 753–509년. 전기의 상당 부분은 전설입니다.</p>
         <RulerList people={kings} />
       </section>
+      <NadooAd inline />
       <section className="mt-10">
         <h2 className="font-serif text-2xl text-ink">길을 잡는 황제 열 사람</h2>
         <p className="mt-1 text-sm text-muted">
