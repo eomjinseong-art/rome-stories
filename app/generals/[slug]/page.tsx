@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -83,6 +84,7 @@ export default async function GeneralPage({ params }: { params: Promise<{ slug: 
         </ul>
       </section>
 
+      <NadooAd inline />
       <section className="mt-8 grid gap-4 sm:grid-cols-2">
         <div className="rounded-lg border border-line bg-card p-4 text-sm leading-7">
           <h2 className="font-serif text-lg text-ink">맞수</h2>

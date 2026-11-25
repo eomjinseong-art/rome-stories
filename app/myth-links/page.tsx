@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { GuideBlock } from "@/components/GuideBlock";
@@ -64,6 +65,7 @@ export default function MythLinksPage() {
         </ul>
       </section>
 
+      <NadooAd inline />
       <section className="mt-10">
         <h2 className="font-serif text-2xl text-ink">로마 쪽에서 더 또렷한 이름</h2>
         <ul className="mt-4 grid gap-3 sm:grid-cols-2">
